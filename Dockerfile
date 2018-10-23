@@ -14,5 +14,5 @@ RUN apk --update --no-cache add nodejs nodejs-npm && \
 
 # Install jq.
 RUN apk --update add jq
-
+    
 CMD ["/bin/sh"]
