@@ -6,7 +6,7 @@ RUN apk --update --no-cache add curl bash build-base python py-pip docker zip gi
   pip install --upgrade pip
 
 # Install AWS Utils
-RUN pip --no-cache-dir install awscli awsebcli ecs-deploy
+RUN pip --no-cache-dir install --upgrade awscli awsebcli ecs-deploy
   
 # Install Node
 RUN apk --update --no-cache add nodejs nodejs-npm && \
